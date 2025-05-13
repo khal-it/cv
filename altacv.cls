@@ -40,7 +40,7 @@
 \RequirePackage{xcolor}
 
 \colorlet{accent}{blue!70!black}
-\colorlet{heading}{black}
+\colorlet{heading}{red}
 \colorlet{emphasis}{black}
 \colorlet{body}{black!80!white}
 \newcommand{\itemmarker}{{\small\textbullet}}
