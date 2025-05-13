@@ -101,25 +101,24 @@
 
 
 \newcommand{\makecvheader}{%
-
-
   \begingroup
-    \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
-    \raggedright\color{emphasis}%
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
-    \medskip
-    {\large\bfseries\color{accent}\@tagline\par}
-    \medskip
-    {\footnotesize\bfseries\@personalinfo\par}
-    \ifdef{\@photodiameter}{%
-    \end{minipage}\hfill%
-    \begin{minipage}{\@photodiameter}
-    \if@normalphoto
-      \includegraphics[width=\linewidth]{\@photo}
-    \else
-      \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
-    \fi%
-    \end{minipage}\par}{}%
+    \noindent
+    \begin{minipage}[c]{0.65\linewidth}
+      \raggedright\color{emphasis}%
+      {\Huge\bfseries\MakeUppercase{\@name}\par}
+      \medskip
+      {\large\bfseries\color{accent}\@tagline\par}
+      \medskip
+      {\footnotesize\bfseries\@personalinfo\par}
+    \end{minipage}%
+    \hfill
+    \ifdef{\@photodiameter}{%5555
+      \begin{minipage}[c]{0.35\linewidth}
+        \raggedleft
+          \if@normalphoto
+            \includegraphics[width=\@photodiameter]{\@photo}\hspace*{5.2em}
+      \end{minipage}%
+    }{}
   \endgroup\medskip
 }
 
