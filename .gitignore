@@ -29,8 +29,8 @@
 *.nlo
 *.nls
 *.out
-*.pdf
 *.pyg
+.DS_Store
 *.run.xml
 *.snm
 *.synctex.gz
