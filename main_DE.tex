@@ -1,0 +1,464 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.3, 30 April 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+\documentclass[10pt,a4paper,normalphoto]{altacv}
+
+% \documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[colorlinks=true,linkcolor=VividPurple,urlcolor=VividPurple,citecolor=black,filecolor=black]{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{008b8b}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{SlateGrey}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+
+\begin{document}
+
+\name{Khalit Hartmann}
+\tagline{Freelance Fullstack Engineer / Flutter Expert}
+\photo{3.1cm}{khalit.png}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+
+
+
+
+
+
+
+\personalinfo{%
+  \printinfo{\faHome}{https://khal.it/}
+  \newline
+  \printinfo{\faGithub}{https://github.com/khal-it}
+  \newline
+  \printinfo{\faLinkedinSquare}{https://www.linkedin.com/in/khalit-hartmann}
+  \newline
+  \email{development@khal.it}
+  \newline
+  \phone{+49 176 233 680 34} 
+  \newline
+  \location{Berlin, Germany}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+% SnapNext GmbH
+\cvevent{Freelance Team Lead - Mobile App Development}{\href{https://snapnext.de/}{SnapNext GmbH}}{01.08.2024 - 01.03.2025}{}
+\textbf{Personnel responsibility:} 2 Developers
+\textbf{Task:} Led the mobile app development team for the Medi app, focusing on feature delivery and codebase improvements.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Increased daily subscriptions significantly within 6 months.
+    \item Boosted user engagement with OneSignal push notifications.
+    \item Launched a new podcast feature for the Medi app.
+    \item Implemented in-app messaging, notifications, and promotions.
+    \item Integrated Maestro for automated testing.
+    \item Enhanced codebase scalability and maintainability.
+\end{itemize}
+
+\cvtag{Health \& Lifestyle}
+\cvtag{Team Leadership}
+\cvtag{Push Notifications}
+\cvtag{One Signal}
+\cvtag{In App Notifications}
+\cvtag{Automated Testing}
+\cvtag{Flutter}
+\cvtag{Dart} 
+\cvtag{Docker}
+\cvtag{Python}
+\cvtag{GraphQL}
+\cvtag{GCP}
+\cvtag{Firebase}
+\cvtag{Sentry}
+\cvtag{Google Analytics}
+\cvtag{CI/CD}
+\cvtag{WebRTC}
+\cvtag{SRTP}
+\cvtag{iOS}
+\cvtag{Android}
+\cvtag{PostgreSQL}
+
+\vspace{2em}
+
+% On AG
+\cvevent{Freelance Mobile App Developer}{\href{https://www.on.com/en-de/}{On AG}}{01.03.2024 - 01.08.2024}{}
+\textbf{Personnel responsibility:} —\\
+\textbf{Task:} Developed and integrated advanced AI features and analytics into the ON App, collaborating with cross-functional teams.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Spearheaded the AI-Chatbot Initiative within the ON App.
+    \item Integrated advanced AI features into the app.
+    \item Collaborated with cross-functional teams.
+    \item Assisted in the development of the RAG-Pipeline.
+    \item Launched the US Pilot for the ON App.
+    \item Helped develop and implement an extensive analytics concept.
+    \item Implemented automated tests with Maestro.
+    \item Implemented advanced filtering feature.
+\end{itemize}
+
+
+\vspace{1em}
+
+\cvtag{E-Commerce}
+\cvtag{Flutter}
+\cvtag{Dart} 
+\cvtag{Firebase}
+\cvtag{Sentry}
+\cvtag{Google Analytics}
+\cvtag{REST}
+\cvtag{LLM}
+\cvtag{Chatbot}
+\cvtag{Automated Testing}
+\cvtag{Docker}
+\cvtag{Contentful}
+\cvtag{iOS}
+\cvtag{Android}
+\cvtag{\href{https://www.on.com/en-de/explore/mobile-app}{On App}}
+
+
+
+
+
+\newpage
+\begin{fullwidth}
+    
+% Roodie Health GmbH
+\cvevent{Freelance Mobile App Developer}{\href{https://www.roodie-health.com/}{Roodie Health GmbH}}{01.10.2023 - 01.03.2024}{}
+\textbf{Personnel responsibility:} 1 Developer 
+\textbf{Task:} Led the rewrite of the React Native app in Flutter and managed white label development.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Rewrote the existing React Native App in Flutter.
+    \item Led White Label Development for Roodie Health App.
+    \item Implemented CI/CD Pipelines for development, deployment and testing.
+    \item Provided technical consulting on best practices.
+\end{itemize}
+
+\vspace{1em}
+
+\cvtag{Health Tech}
+\cvtag{Flutter}
+\cvtag{Dart} 
+\cvtag{Google Analytics}
+\cvtag{Firebase Cloud Messaging / Push Notifications}
+\cvtag{Sentry}
+\cvtag{Strapi}
+\cvtag{REST}
+\cvtag{Java}
+\cvtag{Spring Boot}
+\cvtag{CI/CD}
+\cvtag{iOS}
+\cvtag{Android}
+\cvtag{PostgreSQL}
+\cvtag{\href{https://www.roodie-health.com/}{Roodie App}}
+
+\vspace{2em}
+    
+% MediaMarktSaturn Technology GMBH
+\cvevent{Flutter Engineer / Backend Engineer}{\href{https://careers.mediamarktsaturn.com/MMSTech/?locale=en_US}{MediaMarktSaturn Technology GMBH}}{15.09.2022 - 29.02.2024}{}
+\textbf{Personnel responsibility:} —\\
+\textbf{Task:} Developed new features and optimized CI/CD pipelines for MediaMarkt and Saturn apps, and improved omnichannel communication.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Worked in a team of more than 30 individuals, including developers, UI/UX designers, product owners, and stakeholders.
+    \item Implemented new features in the MediaMarkt and Saturn apps (Team Skittles).
+    \item Optimized CI/CD pipelines and deployed apps to ensure seamless operations.
+    \item Improved omnichannel communication for MediaMarkt and Saturn (Team Shiba Inu).
+    \item Developed event-based push notification service.
+    \item Delivered tech talks on Whitelabel App Development and Smart Push Notifications.
+\end{itemize}
+
+\vspace{1em}
+
+\cvtag{E-Commerce}
+\cvtag{Flutter}
+\cvtag{Dart} 
+\cvtag{Firebase}
+\cvtag{Sentry}
+\cvtag{GCP}
+\cvtag{Google Analytics}
+\cvtag{GraphQL}
+\cvtag{TypeScript}
+\cvtag{Contentful}
+\cvtag{Terraform}
+\cvtag{NestJs}
+\cvtag{NodeJS}
+\cvtag{Google Cloud Platform}
+\cvtag{CI/CD}
+\cvtag{iOS}
+\cvtag{Android}
+\cvtag{Java}
+\cvtag{Kotlin}
+\cvtag{\href{https://play.google.com/store/apps/details?id=com.media.markt&hl=en_US&pli=1}{MediaMarkt Germany}}
+\cvtag{\href{https://play.google.com/store/apps/details?id=com.media.saturn&hl=en&gl=US}{Saturn}}
+\cvtag{\href{https://play.google.com/store/apps/details?id=es.mediamarkt.app&hl=en_US}{MediaMarkt Spain}}
+\cvtag{\href{https://play.google.com/store/apps/details?id=nl.com.media.markt&hl=nl&gl=US}{MediaMarkt Netherlands}}
+\cvtag{\href{https://play.google.com/store/apps/details?id=com.media.markt&hl=en_US&pli=1}{MediaMarkt Italy}}
+
+\vspace{2em}
+
+% FRAMEGRABBER Medien GmbH
+\cvevent{Freelance Mobile App Developer}{\href{https://www.framegrabber-medien.com/}{FRAMEGRABBER Medien GmbH}}{01.10.2021 - 01.07.2022}{}
+\textbf{Personnel responsibility:} —\\
+\textbf{Task:} Developed two media guide apps and maintained close client communication.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Implemented two media guide Apps: DA Kunsthaus Kinder Spiel and DA Kunsthaus Geschichte.
+    \item Delivered 2 high-quality apps with regular client updates.
+\end{itemize}
+
+\vspace{1em}
+
+\cvtag{Education}
+\cvtag{Flutter}
+\cvtag{Dart} 
+\cvtag{iOS}
+\cvtag{Android}
+\cvtag{\href{https://apps.apple.com/de/app/da-kunsthaus-kinderspiel/id6443640116}{DA, Kunsthaus Kinderspiel}}
+\cvtag{\href{https://play.google.com/store/apps/details?id=com.framegrabber.gravenhorst_adults_app&gl=US}{DA, Kunsthaus Geschichte}}
+
+\vspace{2em}
+
+% SNAPNEXT GMBH (2020-2021)
+\cvevent{Freelance Mobile App-/Web Developer}{\href{https://snapnext.de/}{SNAPNEXT GMBH}}{01.06.2020 - 01.09.2021}{}
+\textbf{Personnel responsibility:} — 1 Developer
+\textbf{Task:} Developed and maintained mobile and web applications for various clients.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Developed and maintained apps such as Mein Orthomol, Orthomol - Virtuelle Apotheke, Mosaik, Tetrapak WEIHNACHTS-ORCHESTER, and EFFZEH 360.
+    \item Maintained close communication with clients, providing regular updates and feedback.
+\end{itemize}
+
+\vspace{1em}
+
+\cvtag{Health \& Lifestyle}
+\cvtag{E-Commerce}
+\cvtag{Flutter}
+\cvtag{Dart}
+\cvtag{ReactJS}
+\cvtag{JavaScript}
+\cvtag{CI/CD}
+\cvtag{Firebase}
+\cvtag{JAMStack}
+\cvtag{Salesforce}
+\cvtag{Shopware}
+\cvtag{Strapi}
+\cvtag{Vue.js}
+\cvtag{iOS}
+\cvtag{PostgreSQL}
+\cvtag{Android}
+\cvtag{Python}
+\cvtag{\href{https://www.orthomol.com/de-de/service/app}{Mein Orthomol}}
+
+\newpage
+
+% TRIPPLE-A-CODE GMBH
+\cvevent{Freelance App Developer}{TRIPPLE-A-CODE GMBH }{15.01.2020 - 01.06.2020}{}
+\textbf{Personnel responsibility:} —\\
+\textbf{Task:} Led the development of the Holoswitch App and implemented custom WebRTC plugin.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Spearheaded the development of the Holoswitch App.
+    \item Implemented custom WebRTC flutter plugin.
+    \item Ensured seamless communication between the app and VR-Hardware.
+    \item Set up CI/CD Pipelines for development, testing and deployment.
+    \item Delivered high-quality applications tailored to client needs.
+\end{itemize}
+
+\vspace{1em}
+
+\cvtag{Virtual Reality}
+\cvtag{Flutter}
+\cvtag{Dart}
+\cvtag{WebRTC}
+\cvtag{CI/CD}
+\cvtag{Vue.js}
+\cvtag{iOS}
+\cvtag{Android}
+\cvtag{Java}
+\cvtag{\href{https://bit.ly/3IHeeiF}{\textbf{Holoswitch}}}
+
+\vspace{2em}
+
+% PEQAS GMBH
+\cvevent{Team Lead / App Developer}{PEQAS GMBH}{01.11.18 - 01.01.2020}{}
+\textbf{Personnel responsibility:} 3 Junior Developers, 1 Designer
+\textbf{Task:} Led the development of a cross-platform mobile application and managed CI/CD and AWS infrastructure.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Led the development of a cross-platform mobile application from scratch.
+    \item Set up environments, Travis CI/CD pipelines, and AWS servers.
+    \item Organized and led weekly sprint meetings.
+    \item Gained practical experience in team management and agile development.
+\end{itemize}
+
+\vspace{1em}
+
+\cvtag{Augmented Reality}
+\cvtag{Flutter}
+\cvtag{Dart}
+\cvtag{CI/CD}
+\cvtag{TypeScript}
+\cvtag{Python}
+\cvtag{Firebase}
+\cvtag{Agile Project Management}
+\cvtag{Vue.js}
+\cvtag{SRTP}
+\cvtag{iOS}
+\cvtag{Android}
+
+\vspace{2em}
+
+% DAI-Labor – Distributed Artificial Intelligence Laboratory
+\cvevent{Working Student - Data Scientist}{\href{https://dai-labor.de/}{DAI-Labor – Distributed Artificial Intelligence Laboratory}}{01.03.2018 - 01.11.2018}{}
+\textbf{Personnel responsibility:} —\\
+\textbf{Task:} Developed an event-based recommender system for Realeyz GmbH using data analysis and machine learning.\\
+\textbf{Achievements:}
+\begin{itemize}
+    \item Designed and developed an intelligent system to recommend movies based on world events.
+    \item Used data analysis and machine learning algorithms to match events with movies.
+    \item Collaborated with EYZ-Media GmbH and Realeyz GmbH.
+\end{itemize}
+
+\vspace{1em}
+
+\cvtag{Research}
+\cvtag{NLP}
+\cvtag{Web Scraping}
+\cvtag{Spacy}
+\cvtag{Scrapy}
+\cvtag{PostgreSQL}
+\cvtag{Python}
+\cvtag{Java}
+\cvtag{Spring Boot}
+
+\vspace{2em}
+
+\cvsection{Personal Projects}
+
+\cvevent{Tessellai}{Personal Project}{01.2025-Present}{}
+\begin{itemize}
+    \item Developed a cloud-based image storage solution for events, allowing event managers to administer event photos.
+    \item Offers a public API for device connectivity and on-site interactive features like a live mosaic service.
+\end{itemize}
+
+\vspace{1em}
+
+\cvtag{AWS}
+\cvtag{S3}
+\cvtag{SST.dev}
+\cvtag{ECS}
+\cvtag{ReactJS}
+\cvtag{Python}
+\cvtag{TypeScript}
+\cvtag{NodeJS}
+\cvtag{NeonDB}
+\cvtag{PostgreSQL}
+\cvtag{DynamoDB}
+
+\newpage
+
+\cvsection{References}
+\begin{quote}
+``Wunderbare, professionelle Zusammenarbeit! K. hat den Grundstein für unsere gesamte mobile App Entwicklung gelegt. Sehr zu empfehlen!! `` - \textbf{Andre Gröschel, TrippleACode GmbH}\\
+\end{quote}
+\vspace{.5em}
+\begin{quote}
+``Professionelle, ergebnisorientierte, stets freundliche Zusammenarbeit. Ohne Einschränkung weiterzuempfehlen. Danke K.! `` - \textbf{Timo Mugele, Framegrabber GmbH}\\
+\end{quote}
+
+\vspace{.5em}
+
+\begin{quote}
+``K. hat uns mit klarer Kommunikation und vollem Einsatz überzeugt. Wir können die Zusammenarbeit mit ihm nur empfehlen ``- \textbf{Tim Schröder, MassiveMiniTeam GmbH}\\
+\end{quote}
+
+\vspace{.5em}
+\begin{quote}
+``Khalid has both, self-organization and autodidactic knowledge and abilities, thus he is stepping out, compared to regular flutter developers! `` - \textbf{Max Arbeiter, SnapNext GmbH}\\
+\end{quote}
+
+\vspace{.5em}    
+\begin{quote}
+``Superschnell ins Teamsetting eingefügt, immer hands-on Mentalität und Lösungsfokus, für einige Bereiche FE-Lead beim Re-Build der App übernommen" - \textbf{Nina Tamerl, Roodie Health GmbH}\\
+\end{quote}
+
+\vspace{.5em}
+\begin{quote}
+``K. was a very valued colleague in my department. He was very reliable and always happy to support others in the team.`` - \textbf{Andreas Partenhauser, MediaMarktSaturn Technology GmbH}\\
+\end{quote}
+
+\vspace{.5em}
+\textcolor{red}{\small Please request permission before contacting references. Thank you.}
+\end{fullwidth}
+
+\begin{center}
+  \includegraphics[width=0.905\paperwidth]{company-logos-outline.png}
+\end{center}
+
+
+\end{document}
