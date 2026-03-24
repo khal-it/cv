@@ -43,8 +43,8 @@
 \colorlet{heading}{red}
 \colorlet{emphasis}{black}
 \colorlet{body}{black!80!white}
-\newcommand{\itemmarker}{{\small\textbullet}}
-\newcommand{\ratingmarker}{\faCircle}
+\newcommand{\itemmarker}{{\small\textcolor{accent}{\textbullet}}}
+\newcommand{\ratingmarker}{\scriptsize\faSquare}
 
 
 \RequirePackage{tikz}
@@ -61,7 +61,7 @@
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
-\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
+\newcommand{\divider}{\textcolor{accent!20}{\hdashrule{\linewidth}{0.4pt}{0.5ex}}\medskip}
 
 \newenvironment{fullwidth}{%
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
@@ -127,8 +127,8 @@
 \newcommand{\cvsection}[2][]{%
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
-  {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
-  {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
+  {\color{accent}\rule{3.5pt}{1.1em}\hspace{0.5em}{\color{heading}\LARGE\bfseries\MakeUppercase{#2}}}\\[-1ex]%
+  {\color{heading!15}\rule{\linewidth}{0.5pt}\par}\medskip
 }
 
 \newcommand{\cvsubsection}[1]{%
@@ -155,13 +155,13 @@
 }
 
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base,fill=accent!8,draw=accent!25,rounded corners=3pt,inner xsep=1ex,inner ysep=0.75ex,text height=1.5ex,text depth=.25ex,font=\small\color{emphasis}]{#1};
 }
 
 \newcommand{\cvskill}[2]{%
 \textcolor{emphasis}{\textbf{#1}}\hfill
 \foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\faCircle}}\par%
+  \space{\ifnumgreater{\x}{#2}{\color{body!20}}{\color{accent}}\ratingmarker}}\par%
 }
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
