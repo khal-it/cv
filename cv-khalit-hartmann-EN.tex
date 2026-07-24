@@ -569,26 +569,86 @@
 
 \cvsection{Personal Projects}
 
-\cvevent{Tessellai}{Personal Project}{01.2025-Present}{}
+% TessellAI
+\cvevent{\href{https://tessellai.com}{TessellAI}}{Personal Project}{12.2024 - 03.2026}{}
 \begin{itemize}
-    \item Developed a cloud-based image storage solution for events, allowing event managers to administer event photos.
-    \item Offers a public API for device connectivity and on-site interactive features like a live mosaic service.
+    \item Built a real-time photo-mosaic platform for live events: guests upload photos via QR code and watch them assemble into mosaic art live on screen.
+    \item Engineered a computer-vision pipeline (OpenCV, NumPy, Jonker-Volgenant linear-assignment solver) with incremental per-tile updates streamed over WebSockets + Redis Pub/Sub.
+    \item Migrated the platform from AWS serverless (SST/TypeScript) to a FastAPI/Python monolith with Celery workers and typed OpenAPI client generation.
 \end{itemize}
 
-\vspace{1em}
-
-\cvtag{AWS}
-\cvtag{S3}
-\cvtag{SST.dev}
-\cvtag{ECS}
-\cvtag{ReactJS}
 \cvtag{Python}
-\cvtag{TypeScript}
-\cvtag{NodeJS}
-\cvtag{NeonDB}
+\cvtag{FastAPI}
+\cvtag{Celery}
+\cvtag{Redis}
 \cvtag{PostgreSQL}
-\cvtag{DynamoDB}
-\cvtag{Pulumi}
+\cvtag{React}
+\cvtag{TypeScript}
+\cvtag{PixiJS}
+\cvtag{OpenCV}
+\cvtag{WebSockets}
+\cvtag{Docker}
+\cvtag{Vercel}
+
+\vspace{1.5em}
+
+% khal.it
+\cvevent{\href{https://khal.it}{khal.it}}{Personal Project}{06.2026 - Present}{}
+\begin{itemize}
+    \item Designed and shipped a bilingual (DE/EN) portfolio and content platform with SvelteKit/Svelte 5, Tailwind v4, and Paraglide i18n.
+    \item Built an SEO content engine: 21 keyword-researched articles with automated weekly republishing via GitHub Actions.
+    \item Hardened the delivery pipeline: Gitleaks + Semgrep security scans, Lighthouse CI performance budgets, strict CSP; self-hosted on Hetzner with Docker/Caddy.
+\end{itemize}
+
+\cvtag{SvelteKit}
+\cvtag{Svelte 5}
+\cvtag{TypeScript}
+\cvtag{Tailwind CSS}
+\cvtag{i18n}
+\cvtag{SEO}
+\cvtag{Vitest}
+\cvtag{Playwright}
+\cvtag{Lighthouse CI}
+\cvtag{Docker}
+\cvtag{Caddy}
+\cvtag{Hetzner}
+
+\vspace{1.5em}
+
+% Norlin
+\cvevent{\href{https://norlin.ai}{Norlin}}{Personal Project}{07.2026 - Present}{}
+\begin{itemize}
+    \item Building an AI-powered lead-outreach SaaS for marketing agencies: ad-funnel leads are engaged instantly by an AI conversation flow (Mirror, Qualify, Convert).
+    \item Multi-tenant from day one: PostgreSQL row-level security via Prisma Client Extensions, queue-driven processing with BullMQ.
+    \item Provider-agnostic LLM layer (Vercel AI SDK, Anthropic/OpenAI) with tool-calling; HubSpot OAuth and HMAC-verified webhooks; GDPR-by-design with EU data residency.
+\end{itemize}
+
+\cvtag{AI/LLM}
+\cvtag{NestJS}
+\cvtag{SvelteKit}
+\cvtag{TypeScript}
+\cvtag{Prisma}
+\cvtag{PostgreSQL RLS}
+\cvtag{BullMQ}
+\cvtag{Redis}
+\cvtag{WebSockets}
+\cvtag{HubSpot}
+\cvtag{GDPR}
+
+\vspace{1.5em}
+
+% Web Scrapers
+\cvevent{Web Scrapers}{Personal Project}{Spare Time}{}
+\begin{itemize}
+    \item Implemented multiple web scrapers.
+\end{itemize}
+
+\cvtag{Python}
+\cvtag{Scrapy}
+\cvtag{Selenium}
+\cvtag{Beautiful Soup}
+
+\vspace{1em}
 
 \cvsection{References}
 \begin{quote}
