@@ -118,8 +118,10 @@ Approved amendment:
 
 - No sidebar tier. Project links live in the main Personal Projects entries
   as hyperlinked titles (`\href{...}{Title}` in `\cvevent`).
-- The web-scrapers content is preserved as a compact fourth entry in the main
-  Personal Projects section (no date, one bullet, four tags).
+- ~~The web-scrapers content is preserved as a compact fourth entry in the
+  main Personal Projects section.~~ *(Amended post-implementation: Khalit
+  asked to remove the Web Scrapers entry entirely; Personal Projects now has
+  three entries.)*
 - The dead sidebar files `page2sidebar-en.tex` and `page2sidebar-de.tex` are
   deleted. The ARCore and Facebook Analytics plugin entries disappear with
   them, as previously decided.
