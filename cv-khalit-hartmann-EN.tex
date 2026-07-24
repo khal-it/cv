@@ -81,15 +81,15 @@
 
 
 \personalinfo{%
-  \printinfo{\faHome}{https://khal.it/}
+  \printinfo{\faHome}{\href{https://khal.it}{khal.it}}
   \newline
-  \printinfo{\faGithub}{https://github.com/khal-it}
+  \printinfo{\faGithub}{\href{https://github.com/khal-it}{github.com/khal-it}}
   \newline
-  \printinfo{\faLinkedinSquare}{https://www.linkedin.com/in/khalit-hartmann}
+  \printinfo{\faLinkedinSquare}{\href{https://www.linkedin.com/in/khalit-hartmann}{linkedin.com/in/khalit-hartmann}}
   \newline
-  \email{development@khal.it}
+  \printinfo{\emailsymbol}{\href{mailto:development@khal.it}{development@khal.it}}
   \newline
-  \phone{+49 176 233 680 34} 
+  \printinfo{\phonesymbol}{\href{tel:+4917623368034}{+49 176 233 680 34}}
   \newline
   \location{Berlin, Germany}
 }
@@ -99,27 +99,43 @@
 \makecvheader
 \end{fullwidth}
 
+\begin{fullwidth}
+\cvsection{Profile}
+I am a freelance fullstack engineer from Berlin with more than 8 years of experience building and shipping mobile and web products for companies such as MediaMarktSaturn, On, Brack and Purelei. I design, build and release end to end: Flutter apps, TypeScript backends (NestJS), modern web frontends (SvelteKit, React) and the CI/CD pipelines around them. My current focus is on AI/LLM-powered products and multi-channel e-commerce platforms.
+\end{fullwidth}
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-%% You can always just use \marginpar{...} if you do
-%% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
-\cvsection[page1sidebar-en]{Experience}
+
+\begin{fullwidth}
+\noindent
+\begin{minipage}[t]{0.47\linewidth}
+\cvsection{Languages}
+\textcolor{emphasis}{\textbf{German}} (Native)\quad
+\textcolor{emphasis}{\textbf{English}} (C1)\quad
+\textcolor{emphasis}{\textbf{Arabic}} (B2)
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\cvsection{Education}
+\textcolor{emphasis}{\textbf{Computer Science (Informatik), B.Sc.}}\\
+\textcolor{accent}{\textbf{Technical University of Berlin}} \textperiodcentered{} 2021
+\end{minipage}
+
+\cvsection{Experience}
 
 % Grip King
 \cvevent{Freelance Fullstack Engineer}{Grip King}{01.05.2026 - Present}{}
-\textbf{Personnel responsibility:} —\\
-\textbf{Task:} Architecting and building a multi-channel tire \& rim e-commerce platform for the German market, replacing a manual spreadsheet-based retail operation.\\
+\textbf{Task:} Architecting and building a multi-channel tire \& rim e-commerce platform for the German market.\\
 \textbf{Achievements:}
 \begin{itemize}
     \item Designed and built the platform end-to-end: NestJS API, SvelteKit storefront, and admin dashboard in a pnpm monorepo.
-    \item Modeled EU tire-label compliance (EU 2020/740 / EPREL), DOT tracking, and ledger-based inventory with immutable stock lots.
-    \item Implemented 15-minute stock reservations preventing oversell across eBay, Kleinanzeigen, Tyre24/ALZURA, and the shop's own storefront.
+    \item Modeled EU tire-label compliance (EU 2020/740/EPREL), DOT tracking, and ledger-based inventory.
+    \item Implemented 15-minute stock reservations preventing oversell on eBay, Kleinanzeigen, and Tyre24/ALZURA.
     \item Integrated Billbee OMS (orders, stock, invoicing, DATEV), lexoffice, Stripe, and PayPal.
     \item Set up security-scanned CI/CD (Gitleaks, Semgrep, dependency audit) with auto-deployed staging on Hetzner.
     \item Spec-driven development with 23 ADRs and a full testing pyramid (Vitest, Playwright).
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{E-Commerce}
 \cvtag{TypeScript}
 \cvtag{NestJS}
@@ -140,14 +156,13 @@
 \cvtag{Sentry}
 \cvtag{TDD}
 
-\vspace{2em}
+\vspace{1em}
+\end{fullwidth}
 
-\newpage
 \begin{fullwidth}
 % Protofy GmbH & Co. KG - Purelei
 \cvevent{Freelance Mobile App Developer}{\href{https://protofy.com/}{Protofy GmbH \& Co. KG}}{01.12.2025 - 01.06.2026}{}
-\textbf{Personnel responsibility:} —\\
-\textbf{Task:} Developing the Purelei mobile e-commerce app for a jewelry and lifestyle brand, focusing on Shopify webview integration and native features.\\
+\textbf{Task:} Developing the Purelei mobile e-commerce app with Shopify webview integration and native features.\\
 \textbf{Achievements:}
 \begin{itemize}
     \item Developing the Purelei e-commerce app for iOS and Android.
@@ -158,6 +173,7 @@
     \item Implemented state management architecture using Riverpod.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{E-Commerce}
 \cvtag{Flutter}
 \cvtag{Dart}
@@ -187,7 +203,6 @@
 
 % Protofy GmbH & Co. KG - Brack
 \cvevent{Freelance Mobile App Developer}{\href{https://protofy.com/}{Protofy GmbH \& Co. KG}}{01.05.2025 - 01.06.2026}{}
-\textbf{Personnel responsibility:} —\\
 \textbf{Task:} Developed and released a mobile e-commerce app for the Swiss online shop Brack.\\
 \textbf{Achievements:}
 \begin{itemize}
@@ -197,6 +212,7 @@
     \item Set up CI/CD pipelines using GitHub Actions.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{E-Commerce}
 \cvtag{Flutter}
 \cvtag{Dart}
@@ -236,6 +252,7 @@
     \item Enhanced codebase scalability and maintainability.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{Health \& Lifestyle}
 \cvtag{Team Leadership}
 \cvtag{Push Notifications}
@@ -269,16 +286,14 @@
 \cvtag{Android}
 \cvtag{PostgreSQL}
 
-\newpage
+\vspace{2em}
+
 % On AG
 \cvevent{Freelance Mobile App Developer}{\href{https://www.on.com/en-de/}{On AG}}{01.03.2024 - 01.08.2024}{}
-\textbf{Personnel responsibility:} —\\
-\textbf{Task:} Developed and integrated advanced AI features and analytics into the ON App, collaborating with cross-functional teams.\\
+\textbf{Task:} Developed and integrated advanced AI features and analytics into the ON App.\\
 \textbf{Achievements:}
 \begin{itemize}
     \item Spearheaded the AI-Chatbot Initiative within the ON App.
-    \item Integrated advanced AI features into the app.
-    \item Collaborated with cross-functional teams.
     \item Assisted in the development of the RAG-Pipeline.
     \item Launched the US Pilot for the ON App.
     \item Helped develop and implement an extensive analytics concept.
@@ -286,6 +301,7 @@
     \item Implemented advanced filtering feature.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{E-Commerce}
 \cvtag{Flutter}
 \cvtag{Dart}
@@ -317,8 +333,7 @@
 \cvtag{Android}
 \cvtag{\href{https://www.on.com/en-de/explore/mobile-app}{On App}}
 
-\vspace{2em}
-
+\newpage
 % Roodie Health GmbH
 \cvevent{Freelance Mobile App Developer}{\href{https://www.roodie-health.com/}{Roodie Health GmbH}}{01.10.2023 - 01.03.2024}{}
 \textbf{Personnel responsibility:} 1 Developer\\
@@ -331,6 +346,7 @@
     \item Provided technical consulting on best practices.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{Health Tech}
 \cvtag{Flutter}
 \cvtag{Dart}
@@ -359,10 +375,10 @@
 \cvtag{PostgreSQL}
 \cvtag{\href{https://www.roodie-health.com/}{Roodie App}}
 
-\newpage
+\vspace{2em}
+
 % MediaMarktSaturn Technology GMBH
 \cvevent{Flutter Engineer / Backend Engineer}{\href{https://careers.mediamarktsaturn.com/MMSTech/?locale=en_US}{MediaMarktSaturn Technology GMBH}}{15.09.2022 - 29.02.2024}{}
-\textbf{Personnel responsibility:} —\\
 \textbf{Task:} Developed new features and optimized CI/CD pipelines for MediaMarkt and Saturn apps, and improved omnichannel communication.\\
 \textbf{Achievements:}
 \begin{itemize}
@@ -375,6 +391,7 @@
     \item Delivered tech talks on Whitelabel App Development and Smart Push Notifications.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{E-Commerce}
 \cvtag{Flutter}
 \cvtag{Dart}
@@ -392,7 +409,6 @@
 \cvtag{Terraform}
 \cvtag{NestJs}
 \cvtag{NodeJS}
-\cvtag{Google Cloud Platform}
 \cvtag{GoRouter}
 \cvtag{Deep Linking}
 \cvtag{Secure Storage}
@@ -411,7 +427,6 @@
 \cvtag{iOS}
 \cvtag{Android}
 \cvtag{Java}
-\cvtag{Kotlin}
 \cvtag{\href{https://play.google.com/store/apps/details?id=com.media.markt&hl=en_US&pli=1}{MediaMarkt Germany}}
 \cvtag{\href{https://play.google.com/store/apps/details?id=com.media.saturn&hl=en&gl=US}{Saturn}}
 \cvtag{\href{https://play.google.com/store/apps/details?id=es.mediamarkt.app&hl=en_US}{MediaMarkt Spain}}
@@ -422,7 +437,6 @@
 
 % FRAMEGRABBER Medien GmbH
 \cvevent{Freelance Mobile App Developer}{\href{https://www.framegrabber-medien.com/}{FRAMEGRABBER Medien GmbH}}{01.10.2021 - 01.07.2022}{}
-\textbf{Personnel responsibility:} —\\
 \textbf{Task:} Developed two media guide apps and maintained close client communication.\\
 \textbf{Achievements:}
 \begin{itemize}
@@ -430,6 +444,7 @@
     \item Delivered 2 high-quality apps with regular client updates.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{Education}
 \cvtag{Flutter}
 \cvtag{Dart}
@@ -447,12 +462,10 @@
 \cvtag{\href{https://apps.apple.com/de/app/da-kunsthaus-kinderspiel/id6443640116}{DA, Kunsthaus Kinderspiel}}
 \cvtag{\href{https://play.google.com/store/apps/details?id=com.framegrabber.gravenhorst_adults_app&gl=US}{DA, Kunsthaus Geschichte}}
 
-\vspace{2em}
-
 \newpage
 % SNAPNEXT GMBH (2020-2021)
 \cvevent{Freelance Mobile App-/Web Developer}{\href{https://snapnext.de/}{SNAPNEXT GMBH}}{01.06.2020 - 01.09.2021}{}
-\textbf{Personnel responsibility:} — 1 Developer\\
+\textbf{Personnel responsibility:} 1 Developer\\
 \textbf{Task:} Developed and maintained mobile and web applications for various clients.\\
 \textbf{Achievements:}
 \begin{itemize}
@@ -460,6 +473,7 @@
     \item Maintained close communication with clients, providing regular updates and feedback.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{Health \& Lifestyle}
 \cvtag{E-Commerce}
 \cvtag{Flutter}
@@ -496,7 +510,6 @@
 
 % TRIPPLE-A-CODE GMBH
 \cvevent{Freelance App Developer}{TRIPPLE-A-CODE GMBH }{15.01.2020 - 01.06.2020}{}
-\textbf{Personnel responsibility:} —\\
 \textbf{Task:} Led the development of the Holoswitch App and implemented custom WebRTC plugin.\\
 \textbf{Achievements:}
 \begin{itemize}
@@ -507,6 +520,7 @@
     \item Delivered high-quality applications tailored to client needs.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{Virtual Reality}
 \cvtag{Flutter}
 \cvtag{Dart}
@@ -542,6 +556,7 @@
     \item Gained practical experience in team management and agile development.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{Augmented Reality}
 \cvtag{Flutter}
 \cvtag{Dart}
@@ -577,6 +592,7 @@
     \item Migrated the platform from AWS serverless (SST/TypeScript) to a FastAPI/Python monolith with Celery workers and typed OpenAPI client generation.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{Python}
 \cvtag{FastAPI}
 \cvtag{Celery}
@@ -600,6 +616,7 @@
     \item Hardened the delivery pipeline: Gitleaks + Semgrep security scans, Lighthouse CI performance budgets, strict CSP; self-hosted on Hetzner with Docker/Caddy.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{SvelteKit}
 \cvtag{Svelte 5}
 \cvtag{TypeScript}
@@ -623,6 +640,7 @@
     \item Provider-agnostic LLM layer (Vercel AI SDK, Anthropic/OpenAI) with tool-calling; HubSpot OAuth and HMAC-verified webhooks; GDPR-by-design with EU data residency.
 \end{itemize}
 
+\textbf{Technologies used:}\\[0.4em]
 \cvtag{AI/LLM}
 \cvtag{NestJS}
 \cvtag{SvelteKit}
