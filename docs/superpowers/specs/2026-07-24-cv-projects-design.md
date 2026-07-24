@@ -23,9 +23,10 @@ architecture, and the page-2 sidebar lists outdated plugin projects.
 - **Positioning:** Broaden to Fullstack + AI. Tagline changes:
   - EN: `Freelance Fullstack Engineer — Mobile, Web & AI`
   - DE: `Freelance Fullstack Engineer — Mobile, Web & KI`
-- **Structure:** Two-tier. Medium-detail entries (2–3 bullets + trimmed tags)
-  in the main-flow Personal Projects section; short link + tag entries in the
-  page-2 sidebar.
+- **Structure:** Medium-detail entries (2–3 bullets + trimmed tags) in the
+  main-flow Personal Projects section, with hyperlinked project titles.
+  *(Amended 2026-07-24: originally two-tier with a page-2 sidebar; see
+  Section 3 — the sidebar files turned out to be dead code.)*
 - **Old content:** Keep the web-scrapers sidebar entry; remove the ARCore
   plugin and Facebook Analytics plugin entries; replace the stale AWS-era
   Tessellai content everywhere.
@@ -107,13 +108,21 @@ Redis, WebSockets, HubSpot, GDPR
 
 ## Section 3 — Page-2 sidebar, tagline, mechanics
 
-### Sidebar ("My Projects", page2sidebar-en.tex / page2sidebar-de.tex)
+### Sidebar tier — removed (amended 2026-07-24, approved by Khalit)
 
-- TessellAI → tessellai.com — tags: Python, FastAPI, React, OpenCV, WebSockets
-- khal.it → khal.it — tags: SvelteKit, TypeScript, Tailwind, i18n, SEO
-- Norlin → norlin.ai — tags: NestJS, LLM, Multi-tenant SaaS
-- Web scrapers — kept exactly as-is (Python, Scrapy, Selenium, Beautiful Soup)
-- Removed: ARCore plugin entry, Facebook Analytics plugin entry.
+During planning we found that `page2sidebar-en.tex` / `page2sidebar-de.tex`
+are dead files: nothing includes them, and pages 2+ of both CVs are wrapped in
+`fullwidth`, which spans the sidebar area — so the "My Projects" sidebar
+(including the scrapers entry) does not render in the current PDF at all.
+Approved amendment:
+
+- No sidebar tier. Project links live in the main Personal Projects entries
+  as hyperlinked titles (`\href{...}{Title}` in `\cvevent`).
+- The web-scrapers content is preserved as a compact fourth entry in the main
+  Personal Projects section (no date, one bullet, four tags).
+- The dead sidebar files `page2sidebar-en.tex` and `page2sidebar-de.tex` are
+  deleted. The ARCore and Facebook Analytics plugin entries disappear with
+  them, as previously decided.
 
 ### Mechanics & verification
 
